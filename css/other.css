@@ -1,0 +1,359 @@
+@charset "UTF-8";
+
+html, body, a, li {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+a {
+	color: #fff;
+}
+
+p {
+	font-size: 0.9rem;
+}
+
+h2 {
+	margin: 70px 0;
+	font-size: 2rem;
+}
+
+/*header*/
+#header-wrapper{
+	width: 100%;
+	height: 140px;
+	background-image: url(../images/office-594119_1280.webp);
+	background-size: cover;
+	color: #fff;
+	text-align: center;
+}
+
+.home-logo,
+.fa-mobile-alt {
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+.header-top {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 20px;
+}
+
+.header-right p,
+.footer-time p {
+	background: #565656;
+	padding: 3px 15px;
+	border-radius: 2px;
+	font-size: 0.7rem;
+}
+
+.header-list {
+	display: flex;
+	justify-content: center;
+}
+
+.header-list li {
+	border-left: 1px solid #fff;
+}
+
+.header-list li:first-child {
+	border: none;
+}
+
+.header-list a {
+	padding: 10px 40px;
+}
+
+.header-list a:hover {
+	background-color: rgba(242, 242, 242, .1);
+}
+
+
+/*about*/
+#company {
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+.greeting {
+	width: 80%;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+
+.greeting img {
+	width: 50%;
+	height: auto;
+}
+
+.president-msg {
+	text-align: left;
+	margin: 0 60px;
+}
+
+/*adetail*/
+#company-detail {
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+#company-detail > section {
+	width: 80%;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+.contents {
+	width: 30%;
+	height: auto;
+	color: #000;
+	text-align: left;
+	margin-bottom: 50px;
+	overflow: hidden;
+}
+
+.img-hover {
+	transition-duration: 0.3s;
+}
+
+.img-hover:hover {
+	transform: scale(1.1);
+	transition-duration: 0.3s;
+	opacity: 0.7;	
+}
+
+
+/*recruit*/
+#recruit {
+	width: 100%;
+	height: auto;
+	text-align: center;
+	position: relative;
+}
+
+#recruit > section {
+	width: 70%;
+	margin: 0 auto;
+}
+
+section img {
+	width: 100%;
+}
+
+.on-content {
+	width: 350px;
+	height: auto;
+	padding: 50px;
+	background: rgba(255,255,255,0.7);
+	border-radius: 20px;
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	text-align: left;
+}
+.flex-content {
+	width: 70%;
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.employee01,
+.employee02 {
+	width: 100%;
+	margin: 80px 0;
+	text-align: left;
+}
+
+.employee01 img,
+.employee02 img {
+	width: 90%;
+}
+
+.employee01 p,
+.employee02 p {
+	margin-right: 30px;
+}
+
+.employee01 a:hover,
+.employee02 a:hover {
+	opacity: 0.8;
+}
+
+
+/*footer*/
+footer {
+	width: 100%;
+	height: 300px;
+	text-align: center;
+	background: #e8eff7;
+}
+
+.footer-list ul{
+	display: flex;
+	justify-content: center;
+	padding: 30px 0;
+}
+
+.footer-list li {
+	font-size: 0.8rem;
+	border-left: 1px solid #898989;
+	padding: 0 5px;
+}
+
+.footer-list li:first-child {
+	border: none;
+}
+
+.footer-list a {
+	color: #898989;
+}
+
+footer h2 {
+	font-size: 1.5rem;
+	margin: 0;
+}
+
+footer > a {
+	font-size: 0.7rem;
+	color: #000;
+	margin: 15px 0 15px;
+}
+
+.fa-mobile-alt:hover {
+	color: #8399a4;
+}
+
+.footer-time {
+	width: 210px;
+	margin: 0 auto;
+	color: #fff;
+}
+
+small {
+	font-size: 0.7rem;
+}
+
+/*レスポンシブ*/
+@media (max-width:960px) {
+	/*header*/
+	.header-right {
+		display: none;
+	}
+	.header-left p,
+	.header-left a{
+		font-size: 0.7rem;
+	}
+	.header-top {
+		width: 30%;
+		height: auto;
+		padding: 0;
+	}
+	.header-list li:last-child {
+		display: none;
+	}
+	.header-list{
+		padding: 0;
+		font-size: 1rem;
+	}
+	
+	/*greeting*/
+	.greeting {
+		display: block;
+	}
+	.greeting img {
+		width: 80%;
+	}
+	.greeting img:last-child {
+		display: none;
+	}
+	.president-msg > section {
+		width: 100%;
+		height: 400px;
+		background-image: url(../images/office-594119_1280.webp);
+		background-size: cover;
+	}
+	
+	/*recruit*/
+	.on-content {
+		width: 40%;
+		padding: 30px;
+	}
+	.on-content p:nth-child(2) {
+		display: none;
+	}
+	
+	/*contactBTN*/
+	.contact-btn {
+		display: block;
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		background: #db0000;
+		font-size: 2.5rem;
+		border-radius: 50%;
+		position: fixed;
+		z-index: 10;
+		color: #fff;
+	}
+	.contact-btn > a {
+		padding: 100px;
+	}
+	.contact-btn > a:hover {
+		opacity: 0.8;
+	}
+	.fa-envelope {
+		position: absolute;
+		top: 30%;
+		right: 30%;
+	}
+}
+
+@media (max-width:559px) {
+	/*about*/
+	.president-msg {
+		margin: 0 40px;
+	}
+	.president-msg p:nth-child(3),
+	.text p:last-child {
+		display: none;
+	}
+	.president-msg > section {
+		height: 160px;
+	}
+	
+	/*detail*/
+	#company-detail > section {
+		display: block;
+	}
+	
+	/*recruit*/
+	.on-content {
+		position: inherit;
+		width: 100%;
+		background: none;
+		padding: 0;
+	}
+	.flex-content {
+		display: block;
+		padding: 50px 0;
+	}
+	.employee01,
+	.employee02 {
+		margin: 0 auto;
+		text-align: left;
+	}
+	.employee01 {
+		margin-bottom: 50px;
+	}
+}

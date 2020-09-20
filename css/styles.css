@@ -1,0 +1,311 @@
+@charset "UTF-8";
+
+html, body, a, li {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+
+a, h1 {
+	color: #fff;
+}
+
+p {
+	font-size: 0.9rem;
+}
+
+/*header*/
+#header-wrapper{
+	width: 100%;
+	height: 520px;
+	background-image: url(../images/office-594119_1280.webp);
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+
+.home-logo,
+.fa-mobile-alt {
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+
+.header-top {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 150px;
+}
+
+.header-right p,
+.footer-time p {
+	background: #565656;
+	padding: 3px 15px;
+	border-radius: 2px;
+	font-size: 0.7rem;
+}
+
+.header-list {
+	display: flex;
+	justify-content: center;
+}
+
+.header-list li {
+	border-left: 1px solid #fff;
+}
+
+.header-list li:first-child {
+	border: none;
+}
+
+.header-list a {
+	padding: 10px 40px;
+}
+.header-list a:hover {
+	background-color: rgba(242, 242, 242, .1);
+}
+
+.header-main h1 {
+	font-size: 2.5rem;
+	margin-top: 120px;
+}
+
+/**/
+
+.main-nav {
+	width:100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.main-nav h2 {
+	margin-top: 30px;
+	text-shadow: 2px 2px rgba(56, 56, 56,.7);
+}
+
+.about,
+.service,
+.recruit {
+	width: 25%;
+	height: 100px;
+	background-image: url(../images/student.jpg);
+	border: 1px solid #dbdbdb;
+}
+
+.about {
+	margin-right: 5px;
+}
+
+.service {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+.recruit {
+	margin-left: 5px;
+}
+
+.about:hover,
+.service:hover,
+.recruit:hover {
+	opacity: 0.8;
+}
+
+/*お知らせ*/
+.news,
+.text-contents,
+.location {
+	margin: 0 auto;
+	width: 64%;
+}
+
+.news {
+	height: 160px;
+	margin: 30px auto;
+	font-size: 0.8rem;
+}
+
+.fa-rss-square {
+	width: 96%;
+	background: #fcfcfc;
+	border: 1px solid #cccccc;
+	padding: 6px 20px;
+	border-radius: 2px;
+	color: #898989;
+}
+
+dl {
+	display: flex;
+	border-bottom: 1px dotted #b5b5b5;
+}
+
+dd a{
+	color: #000;
+}
+
+dd a:hover {
+	color: #8399a4;
+}
+
+.text-contents {
+	line-height: 2;
+}
+
+.location a {
+	color: #000;
+	text-decoration: underline;
+}
+
+iframe {
+	width: 100%;
+	height: 250px;
+}
+
+.message {
+	display: flex;
+	margin: 40px 0 40px;
+	padding: 10px 10px 10px 0;
+	background: #e8eff7;
+}
+
+.message p {
+	padding-left: 15px;
+}
+
+.fa-exclamation-circle {
+	padding: 15px 15px;
+	border-right: 1px solid #898989;
+	margin-top: 12px;
+}
+
+/*footer*/
+footer {
+	width: 100%;
+	height: 300px;
+	text-align: center;
+	background: #e8eff7;
+}
+
+.footer-list ul{
+	display: flex;
+	justify-content: center;
+	padding: 30px 0;
+}
+
+.footer-list li {
+	font-size: 0.8rem;
+	border-left: 1px solid #898989;
+	padding: 0 5px;
+}
+
+.footer-list li:first-child {
+	border: none;
+}
+
+.footer-list a {
+	color: #898989;
+}
+
+footer h2 {
+	font-size: 1.3rem;
+	margin-bottom: 0;
+}
+
+footer > a {
+	font-size: 0.7rem;
+	margin: 15px 0 15px;
+	color: #000;
+}
+
+footer .fa-mobile-alt {
+	color: #000;
+}
+
+.fa-mobile-alt:hover {
+	color: #8399a4;
+}
+
+.footer-time {
+	width: 210px;
+	margin: 0 auto;
+	color: #fff;
+}
+
+small {
+	font-size: 0.7rem;
+}
+
+.contact-btn {
+	display: none;
+}
+
+
+/*レスポンシブ*/
+@media (max-width:960px) {
+	/*header*/
+	.header-right,
+	.header-list {
+		display: none;
+	}
+	.header-left p,
+	.header-left a{
+		font-size: 0.7rem;
+	}
+	.header-main h1 {
+		margin-top: 100px;
+	}
+	.header-top {
+		padding: 0 20px;
+	}
+	/*main*/
+	.main-nav {
+		width: 70%;
+		height: 330px;
+		display: block;
+		margin: 0 auto;
+	}
+	.main-nav a {
+		display: block;
+		width: 100%;
+		height: 90px;
+	}
+	.main-nav h2 {
+		padding-top: 30px;
+	}
+	
+	/*about*/
+	.about,
+	.service,
+	.recruit {
+		border: none;
+		margin: 0;
+	}
+	
+	/*contactBTN*/
+	.contact-btn {
+		display: block;
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		background: #db0000;
+		font-size: 2.5rem;
+		border-radius: 50%;
+		position: fixed;
+		color: #fff;
+	}
+	.contact-btn > a {
+		padding: 100px;
+	}
+	.contact-btn > a:hover {
+		opacity: 0.8;
+	}
+	.fa-envelope {
+		position: absolute;
+		top: 30%;
+		right: 30%;
+	}
+}
